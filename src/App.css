@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  font-family: "Open Sans", "Helvetica Neue";
+  width: 100vw;
+  height: 100vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#light {
+  background: linear-gradient(to bottom, #ff69b4, #fce9ed);
+  color: #46045e;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#dark {
+  background: linear-gradient(to bottom, #46045e, #9d00a0);
+    color:#f3ebf6;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+.main{
+  width: 100px;
+  height: 100px;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#light .main{
+  background: linear-gradient(to bottom, #46045e, #9d00a0);
+}
+
+#dark .main{
+  background: linear-gradient(to bottom, #ff69b4, #fce9ed);
+}
+
+
+.react-switch .react-switch-bg {
+  background-color: #46045e;
 }

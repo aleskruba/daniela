@@ -1,0 +1,81 @@
+
+.navbar {
+    position: relative;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+  }
+ 
+
+
+  .navbar-brand {
+    font-size: 35px;
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+
+  }
+
+  #light .navbar-brand {
+    color: #FFFFFF; 
+   }
+
+  #dark .navbar-brand {
+    color: #fce9ed; 
+   }
+  
+  .navbar-right {
+    display: flex;
+  }
+  
+  .nav-link {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+  }
+ 
+  #light .nav-link {
+    color: #FFFFFF; 
+   }
+
+  #dark .nav-link {
+    color: #fce9ed; 
+   }
+ 
+ .switch{
+    position: absolute;
+    top: 5px;
+    right:10px;
+ }
+
+ .colorwand{
+    font-size: 30px;
+ }
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-right {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-link {
+      padding: 10px 0;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+}
+  
