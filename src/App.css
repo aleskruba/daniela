@@ -12,8 +12,7 @@
 }
 
 #light {
-  background: linear-gradient(to bottom, #ff69b4, #fce9ed);
-  color: #46045e;
+  background: linear-gradient(to bottom, #f7479f, #f17792);
   }
 
 
@@ -35,7 +34,7 @@
 }
 
 #dark .main{
-  background: linear-gradient(to bottom, #ff69b4, #fce9ed);
+  background: linear-gradient(to bottom, #ee2e8e, #c93e71);
 }
 
 
