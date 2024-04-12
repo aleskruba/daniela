@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import './navbar.css';
 import ReactSwitch from "react-switch";
 import { ThemeContext } from '../context/themeContext';
-import { FaMoon, FaSun  } from 'react-icons/fa';
 import { IoMdColorWand } from "react-icons/io";
 
 
@@ -12,7 +11,7 @@ function Navbar() {
   return (
     <nav className="navbar">
         <div className="navbar-left">
-        <a href="#" className="navbar-brand">Spanish with Daniela</a>
+        <a href="#" className="navbar-brand">Spanish with <span className='navbar-brand-name'>Dani</span></a>
         </div>
         <div className="navbar-right">
         <a href="#" className="nav-link">About Me</a>

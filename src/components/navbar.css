@@ -17,6 +17,13 @@
     font-optical-sizing: auto;
 
   }
+.navbar-brand-name{
+  font-size: 45px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: aqua; 
+  color: white; 
+}
 
   #light .navbar-brand {
     color: #FFFFFF; 
@@ -48,7 +55,7 @@
  .switch{
     position: absolute;
     top: 5px;
-    right:10px;
+    right:30px;
  }
 
  .colorwand{
@@ -77,5 +84,12 @@
     .navbar-brand {
         font-size: 30px;
     }
-}
+    .navbar-brand-name{
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .switch{
+      right:15px;
+   }
+  }
   
