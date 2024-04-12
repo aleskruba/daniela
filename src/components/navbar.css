@@ -5,10 +5,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 30px;
+   
   }
- 
 
+.navbar-left{
+  padding: 40px 30px;
+}
+
+.navbar-image-div{
+display: none;  
+}
+
+.navbar-right{
+  padding: 40px 30px;
+}
 
   .navbar-brand {
     font-size: 35px;
@@ -65,17 +75,32 @@
   /* Media query for responsiveness */
   @media screen and (max-width: 768px) {
     .navbar {
-      flex-direction: column;
-      align-items: center;
+      align-items: start;
     }
   
     .navbar-left {
       margin-bottom: 10px;
+      padding: 20px 30px;
     }
-  
+   
+    .navbar-image-div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      width: 120px;
+      height: 120px;  
+      }
+
+      .navbar-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
     .navbar-right {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
     }
   
     .nav-link {
