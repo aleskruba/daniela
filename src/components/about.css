@@ -17,7 +17,7 @@
   color: #fff; 
   margin-bottom: 1rem;
   padding: 0 20px;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
@@ -48,8 +48,8 @@
 
   @media only screen and (max-width: 1024px) {
     .about-main-h1 {
-      font-size: 2.50rem; /* lg:text-8xl */
-      line-height: 1.25; /* lg:leading-normal */
+      font-size: 1.3rem; 
+
     }
     .container{
         display: flex;
@@ -59,9 +59,19 @@
 
   @media only screen and (max-width: 740px) {
     .about-main-h1 {
-        font-size: 2.0rem;
+        font-size: 1.5rem;
    
       }
+
+      .about-main-p{
+        color: #fff; 
+         text-align: justify;
+        font-size: 1rem;
+        padding: 0 20px;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+      }
+
       .container{
         display: flex;
         flex-direction: column;
