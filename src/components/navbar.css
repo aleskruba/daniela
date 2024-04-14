@@ -60,7 +60,16 @@ display: none;
     text-decoration: none;
     padding: 0 15px;
     font-size: 20px;
-  }
+    transition: color 0.3s ease;
+}
+
+#light .nav-link:hover {
+    color: lightgray;
+}
+
+#dark .nav-link:hover {
+  color: lightgray;
+}
  
   #light .nav-link {
     color: #FFFFFF; 
@@ -137,7 +146,7 @@ display: none;
     .navbar-right {
       flex-direction: column;
       align-items: start;
-      margin-top: 30px;
+      margin-top: 10px;
     }
   
     .nav-link {

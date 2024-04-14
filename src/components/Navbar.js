@@ -21,6 +21,7 @@ function Navbar() {
           <a href="#" className="nav-link">About Me</a>
           <a href="#" className="nav-link">Experience</a>
           <a href="#" className="nav-link">Courses</a>
+          <a href="#" className="nav-link">Contact</a>
         <div className='switch'>
         <IoMdColorWand className='colorwand'/> 
             <ReactSwitch 
