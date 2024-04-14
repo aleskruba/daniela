@@ -13,7 +13,7 @@ function Navbar() {
         <div className="navbar-left">
         <a href="#" className="navbar-brand">Spanish with <span className='navbar-brand-name'>Dani</span></a>
           <div className='navbar-image-div'>
-              <img src="girl.png" alt="Daniela"  className='navbar-image' />
+              <img src="dani.jpeg" alt="Daniela"  className='navbar-image' />
           </div>
 
         </div>

@@ -8,6 +8,14 @@ function About() {
   return (
     <section className="about-main-section">
       <div className="container">
+   
+      <div className="about-main-imagediv">
+
+          <div className='about-main-imagediv-inner'>
+            <img className='about-main-imagediv-image' src='dani.jpeg' alt='image' />
+          </div>
+        </div>
+
         <div className="about-main-div">
         <h1 className="about-main-h1">
             <TypeAnimation
@@ -28,9 +36,7 @@ function About() {
             </p>
       
         </div>
-        <div className="about-main-imagediv">
-          <img className='about-main-imagediv-image' src='girl.png' alt='image' />
-        </div>
+   
       </div>
     </section>
   );

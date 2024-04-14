@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import Experiences from './components/Experiences';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { ThemeContext } from './context/themeContext';
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
 
        <About/>
+       <Experiences/>
       <Footer/>
 
   
