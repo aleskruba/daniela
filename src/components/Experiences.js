@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useContext} from 'react';
+import { ThemeContext } from '../context/themeContext';
 import './experience.css';
 
 
 function Experiences() {
+
+  const { experienceRef } = useContext(ThemeContext);
+
   return (
-    <div className='experience-container'>
+    <div ref={experienceRef} className='experience-container'>
      
      <div className='experience-title'>
           <h1 className='experience-title-h'>My Spanish Teaching Experience</h1>
@@ -19,7 +23,7 @@ function Experiences() {
          
           <div className='experience-main-right'>
           <iframe className='iframe'
-                  src="https://www.youtube.com/embed/v-ddWJqQnX4" title="Conecta en ESPAÑOL conmigo!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  src="https://www.youtube.com/embed/v-ddWJqQnX4" title="Conecta en ESPAÑOL conmigo!" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
      </div>
       

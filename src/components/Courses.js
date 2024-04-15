@@ -1,23 +1,46 @@
-import React from 'react'
+import React,{useContext,useState,useEffect,useRef} from 'react';
+import { ThemeContext } from '../context/themeContext';
 import './courses.css';
-import { motion } from "framer-motion"
+import { motion, useAnimation, useInView } from  'framer-motion'
 
 function Courses() {
+
+   const { coursesRef } = useContext(ThemeContext);
+      const ref = useRef(null)
+     const isInView = useInView(ref)
+     const mainControls =  useAnimation()
+
+     const formVariants = {
+      hidden: { x: '-100%',opacity: 0},
+      visible: { x: '0%' ,opacity: 1},
+    };
+
+     useEffect(()=>{
+      if (isInView) {
+      mainControls.start("visible")
+      }
+      },[isInView,mainControls])
+
   return (
-    <div className='courses-container'>
+    <div className='courses-container' ref={coursesRef}>
    {/* <h1 className="courses-main-h1">I can offer you these courses</h1> */}
       <div className="gridDiv">
 
       <motion.div
+   
         className='textDiv'
-        initial={{ opacity: 0, x: '-30%', y: '0%' }} // Set initial properties
-        animate={{ opacity: 1, x: '0%', y: '0%', transition: { delay: 0, duration: 1 } }} // Animate properties with delay and duration
-        exit={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 1 } }} // Add exit animation for the shake effect
-
+     //   initial={{ opacity: 0, x: '-30%', y: '0%' }} // Set initial properties
+       initial="hidden"  
+       variants={formVariants}
+        animate={mainControls}
+        transition={{ type: 'spring', duration: 1.5 }}
+        //  animate={{ opacity: 1, x: '0%', y: '0%', transition: { delay: 0, duration: 1 } }} // Animate properties with delay and duration
+      //  exit={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 1 } }} // Add exit animation for the shake effect
+     
     >
        <div className='textDivText'><p>Take advantage of a</p>
             <p className='free'>FREE</p>
-            <p>20-minute trial lesson</p> 
+            <p ref={ref} >20-minute trial lesson</p> 
         </div> 
       </motion.div>
 
@@ -97,7 +120,7 @@ function Courses() {
       </div>
 
 
-
+    
     </div>
   )
 }

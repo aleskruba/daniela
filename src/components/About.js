@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { ThemeContext } from '../context/themeContext';
 import { TypeAnimation } from "react-type-animation";
 import './about.css';
 
 function About() {
 
-
+  const { aboutRef } = useContext(ThemeContext);
   return (
-    <section className="about-main-section">
+    <section ref={aboutRef} className="about-main-section">
       <div className="container">
    
       <div className="about-main-imagediv">
