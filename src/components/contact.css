@@ -10,7 +10,7 @@
 .contact-info a {
     text-decoration: none;
     color: #1e90ff;
-    margin: 10px;
+
 }
 .contact-info a:hover {
     text-decoration: underline;
@@ -35,7 +35,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
 .contact-info-facebook,
 .contact-info-instagram{
     font-size: 42px;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 @media only screen and (max-width: 740px) {
