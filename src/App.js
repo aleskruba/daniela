@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import Courses from './components/Courses';
 import Experiences from './components/Experiences';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -10,7 +11,7 @@ import { useContext } from 'react';
 
 function App() {
 
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="App" id={theme}>
@@ -18,6 +19,8 @@ function App() {
 
        <About/>
        <Experiences/>
+       <Courses/>
+
       <Footer/>
 
   
