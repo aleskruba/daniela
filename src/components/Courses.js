@@ -24,28 +24,12 @@ function Courses() {
   return (
     <div className='courses-container' ref={coursesRef}>
    {/* <h1 className="courses-main-h1">I can offer you these courses</h1> */}
-      <div className="gridDiv">
-
-      <motion.div
-   
-        className='textDiv'
-     //   initial={{ opacity: 0, x: '-30%', y: '0%' }} // Set initial properties
-       initial="hidden"  
-       variants={formVariants}
-        animate={mainControls}
-        transition={{ type: 'spring', duration: 1.5 }}
-        //  animate={{ opacity: 1, x: '0%', y: '0%', transition: { delay: 0, duration: 1 } }} // Animate properties with delay and duration
-      //  exit={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 1 } }} // Add exit animation for the shake effect
-     
-    >
-       <div className='textDivText'><p>Take advantage of a</p>
-            <p className='free'>FREE</p>
-            <p ref={ref} >20-minute trial lesson</p> 
-        </div> 
-      </motion.div>
+      <div className="gridDiv" >
 
 
-          <div className="flow">
+
+
+          <div className="flow" >
         
             <div className="flowtext">
               <div className='kids-image-div'> 
@@ -116,6 +100,24 @@ function Courses() {
               </div>   
      
           </div>
+
+          <motion.div
+       ref={ref}
+        className='textDiv'
+     //   initial={{ opacity: 0, x: '-30%', y: '0%' }} // Set initial properties
+       initial="hidden"  
+       variants={formVariants}
+        animate={mainControls}
+        transition={{ type: 'spring', duration: 1.5 }}
+        //  animate={{ opacity: 1, x: '0%', y: '0%', transition: { delay: 0, duration: 1 } }} // Animate properties with delay and duration
+      //  exit={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 1 } }} // Add exit animation for the shake effect
+     
+    >
+       <div className='textDivText'><p>Take advantage of a</p>
+            <p className='free'>FREE</p>
+            <p  >20-minute trial lesson</p> 
+        </div> 
+      </motion.div>
 
       </div>
 
