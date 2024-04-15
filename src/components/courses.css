@@ -156,7 +156,7 @@
     font-weight: 900;
     font-size: 32px;
     top:20px;
-    left:35px;
+    left:30px;
   
   }
   .grammar-right-side-title{
@@ -222,5 +222,12 @@
       grid-template-columns: repeat(1, 1fr);
       grid-gap:10px;
     }
+
+    .conversation-right-side-title{
+
+        top:25px;
+        left:20px;
+      
+      }
   
   }
