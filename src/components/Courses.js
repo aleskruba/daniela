@@ -29,37 +29,7 @@ function Courses() {
 
 
 
-          <div className="flow" >
-        
-            <div className="flowtext">
-              <div className='kids-image-div'> 
-                  <img src="kid.png" alt="" className='kids-image' />   
-              </div>
-              
-            </div>
-            <div className='right-side'>
-                <div className="right-side-title">
-                   Spanish for kids
-                </div>
-
-                <div className="right-side-text">
-                  <p>Interactive learning adventure for kids 8 and up!</p>
-
-                <p>
-                Join us for exciting activities and creative lessons designed to make learning fun and engaging
-                </p>
-                </div>
-
-                <div className="right-side-price">
-                   1 HOUR FROM $10 
-                </div>
-            </div>
-          </div>
-
-
-
-
-          <div className="flow">
+             <div className="flow">
               <div className="conversation-left-side">
                 <p>Let's practice conversation!</p>
               We can chat about anything you like, whether it's your favorite hobbies, travel experiences, or even just everyday life. Practice speaking Spanish in a relaxed and friendly environment.
@@ -100,6 +70,33 @@ function Courses() {
               </div>   
      
           </div>
+
+          <div className="flow" >
+        
+        <div className="flowtext">
+          <div className='kids-image-div'> 
+              <img src="kid.png" alt="" className='kids-image' />   
+          </div>
+          
+        </div>
+        <div className='right-side'>
+            <div className="right-side-title">
+               Spanish for kids
+            </div>
+
+            <div className="right-side-text">
+              <p>Interactive learning adventure for kids 8 and up!</p>
+
+            <p>
+            Join us for exciting activities and creative lessons designed to make learning fun and engaging
+            </p>
+            </div>
+
+            <div className="right-side-price">
+               1 HOUR FROM $10 
+            </div>
+        </div>
+      </div>
 
           <motion.div
        ref={ref}
